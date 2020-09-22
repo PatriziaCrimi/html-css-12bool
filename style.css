@@ -48,6 +48,7 @@ main .h-tube img {
   float: left;
 }
 
+/* Main - Section - Bricks Wall */
 main .v-tube-left {
   background-image: url('img/v_grey_tube.jpg');
   background-repeat: no-repeat;
@@ -98,6 +99,59 @@ main .pink {
 
 main .green {
   background-color: green;
+}
+
+/* Main - Section - Bottom */
+#ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E0F2F7;
+  border: 2px solid black;
+}
+
+main .paddle-row {
+  height: 80px;
+  position: relative;
+}
+
+main #paddle {
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  bottom: 20px;
+}
+
+#paddle::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#paddle .grey-body {
+  background-color: #D8D8D8;
+  width: 70%;
+  height: 18px;
+  float:left;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+#paddle .paddle-red {
+  background-color: #DF0101;
+  width: 15%;
+  height: 18px;
+  float: left;
+}
+
+#paddle .paddle-red.left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#paddle .paddle-red.right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* Footer */
