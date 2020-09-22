@@ -17,13 +17,28 @@ header {
 header h2 {
   color: red;
   text-transform: uppercase;
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+header .col-offset-2 > p {
+  font-size: 15px;
+  font-style: italic;
 }
 
 header p {
   color: white;
+  padding: 20px 0;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 header span {
+  font-weight: bold;
+  color: red;
+}
+
+header .high-score-number p {
   font-weight: bold;
 }
 
@@ -46,6 +61,7 @@ main .h-tube img {
   width: 50%;
   height: 20px;
   float: left;
+  margin-top: 20px;
 }
 
 /* Main - Section - Bricks Wall */
@@ -75,6 +91,8 @@ main .small {
 main .bricks {
   border: 1px solid black;
   height: 30px;
+  box-shadow: 8px 10px 20px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
 }
 
 main .grey {
@@ -108,9 +126,10 @@ main .green {
   border-radius: 50%;
   background-color: #E0F2F7;
   border: 2px solid black;
+  box-shadow: 20px 15px 8px 2px rgba(0, 0, 0, 0.8);
 }
 
-main .paddle-row {
+main .paddles-row {
   height: 80px;
   position: relative;
 }
@@ -120,6 +139,7 @@ main #paddle {
   height: 18px;
   position: absolute;
   bottom: 20px;
+  box-shadow: 15px 10px 6px 2px rgba(0, 0, 0, 0.8);
 }
 
 #paddle::after {
@@ -160,11 +180,15 @@ footer {
   color: white;
 }
 
+footer .player {
+  padding-top: 30px;
+}
+
 footer span {
   color: red;
   font-weight: bold;
 }
 
 footer img {
-  width: 80%;
+  width: 90%;
 }
