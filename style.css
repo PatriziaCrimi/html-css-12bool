@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+/* Header */
+header {
+  background-color: black;
+  text-align: center;
+}
+
+header h2 {
+  color: red;
+  text-transform: uppercase;
+}
+
+header p {
+  color: white;
+}
+
+header span {
+  font-weight: bold;
+}
+
+/* Main */
+main#wall {
+  background-image: url('img/bg.png');
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer span {
+  color: red;
+  font-weight: bold;
+}
