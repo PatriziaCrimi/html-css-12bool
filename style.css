@@ -28,8 +28,43 @@ header span {
 }
 
 /* Main */
-main#wall {
+main {
   background-image: url('img/bg.png');
+}
+
+main .h-tube {
+  width: 100%;
+}
+
+main .h-tube::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+main .h-tube img {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+main .v-tube-left {
+  text-align: right;
+}
+
+main .v-tube-right {
+  text-align: left;
+}
+
+main .v-tube-left img,
+main .v-tube-right img {
+  width: 21%;
+}
+
+main .grey {
+  background-color: grey;
+  border: 1px solid black;
+  height: 30px;
 }
 
 /* Footer */
@@ -41,4 +76,8 @@ footer {
 footer span {
   color: red;
   font-weight: bold;
+}
+
+footer img {
+  width: 80%;
 }
