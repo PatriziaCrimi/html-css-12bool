@@ -44,27 +44,60 @@ main .h-tube::after {
 
 main .h-tube img {
   width: 50%;
-  height: auto;
+  height: 20px;
   float: left;
 }
 
 main .v-tube-left {
-  text-align: right;
+  background-image: url('img/v_grey_tube.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 80px;
 }
 
 main .v-tube-right {
-  text-align: left;
+  background-image: url('img/v_grey_tube.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 80px;
 }
 
-main .v-tube-left img,
-main .v-tube-right img {
-  width: 21%;
+main .v-tube-right.knot,
+main .v-tube-left.knot {
+  background-image: url('img/knot_tube.jpg');
+}
+
+main .small {
+  height: 30px;
+}
+
+main .bricks {
+  border: 1px solid black;
+  height: 30px;
 }
 
 main .grey {
   background-color: grey;
-  border: 1px solid black;
-  height: 30px;
+}
+
+main .red {
+  background-color: red;
+}
+
+main .yellow {
+  background-color: yellow;
+}
+
+main .blue {
+  background-color: blue;
+}
+
+main .pink {
+  background-color: pink;
+}
+
+main .green {
+  background-color: green;
 }
 
 /* Footer */
