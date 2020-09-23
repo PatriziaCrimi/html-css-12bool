@@ -8,6 +8,11 @@ body {
   font-family: sans-serif;
 }
 
+span {
+  font-weight: bold;
+  color: red;
+}
+
 /* Header */
 header {
   background-color: black;
@@ -18,12 +23,7 @@ header h2 {
   color: red;
   text-transform: uppercase;
   font-size: 30px;
-  padding: 15px 0;
-}
-
-header .col-offset-2 > p {
-  font-size: 15px;
-  font-style: italic;
+  padding-top: 15px;
 }
 
 header p {
@@ -33,13 +33,33 @@ header p {
   margin-bottom: 10px;
 }
 
-header span {
-  font-weight: bold;
-  color: red;
+header #logo-header img {
+  width: 100%;
+  max-width: 400px;
+  min-width: 180px;
 }
 
-header .high-score-number p {
+header #current-score {
+  width: 100%;
+  padding-top: 200px;
+}
+
+header #high-score p {
   font-weight: bold;
+  font-size: 22px;
+}
+
+header #level {
+  width: 100%;
+  padding-top: 200px;
+}
+
+header #version p {
+  width: 100%;
+  font-style: italic;
+  font-size: 16px;
+  padding-right: 30px;
+  text-align: right;
 }
 
 /* Main */
@@ -66,14 +86,14 @@ main .h-tube img {
 
 /* Main - Section - Bricks Wall */
 main .v-tube-left {
-  background-image: url('img/v_grey_tube.jpg');
+  background-image: url('img/v_tube.jpg');
   background-repeat: no-repeat;
   background-position: right;
   height: 80px;
 }
 
 main .v-tube-right {
-  background-image: url('img/v_grey_tube.jpg');
+  background-image: url('img/v_tube.jpg');
   background-repeat: no-repeat;
   background-position: left;
   height: 80px;
@@ -120,7 +140,7 @@ main .green {
 }
 
 /* Main - Section - Bottom */
-#ball {
+main #ball {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -129,7 +149,7 @@ main .green {
   box-shadow: 20px 15px 8px 2px rgba(0, 0, 0, 0.8);
 }
 
-main .paddles-row {
+main .paddle-row {
   height: 80px;
   position: relative;
 }
@@ -177,18 +197,24 @@ main #paddle {
 /* Footer */
 footer {
   background-color: black;
+}
+
+footer #player {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
   color: white;
 }
 
-footer .player {
-  padding-top: 30px;
-}
-
-footer span {
-  color: red;
-  font-weight: bold;
+footer #logo-footer {
+  text-align: right;
+  height: 100%;
+  width: 100%;
 }
 
 footer img {
-  width: 90%;
+  width: 80%;
+  max-width: 300px;
+  min-width: 200px;
 }
