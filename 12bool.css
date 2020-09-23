@@ -1,5 +1,5 @@
 .container {
-  max-width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -14,10 +14,6 @@
 }
 
 /* COLUMNS */
-.col-0 {
-  width: 0px;
-}
-
 .col-1 {
   width: calc(100% / 12);
 }
@@ -113,8 +109,4 @@
 
 .col-offset-11 {
   margin-left: calc(100% / 12 * 11);
-}
-
-.col-offset-12 {
-  margin-left: 100%;
 }
